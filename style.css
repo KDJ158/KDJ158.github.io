@@ -1,0 +1,269 @@
+/* Grundlegende Styles für eine saubere Optik */
+body {
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #1a2a3a; /* Sehr dunkles, tiefes Blau für den Hintergrund */
+    color: #e0e6eb; /* Heller Text für sehr guten Kontrast auf dunklem Grund */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 880px;
+    margin: 10px auto; /* Abstand oben des Containers zur Browserkante */
+    background: #25394a; /* Dunklerer Blauton für den Hauptcontainer */
+    padding: 10px 70px; /* Padding oben von 30px auf 10px reduziert, um Inhalt nach oben zu verschieben */
+    border-radius: 18px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5); /* Noch kräftigerer, weicher Schatten für Tiefe */
+    flex-grow: 1;
+    border: 1px solid #3d5a73; /* Deutlicherer Rand, der sich abhebt */
+}
+
+/* Neuer Container für das Portraitbild, zur Zentrierung */
+.portrait-container {
+    text-align: center; /* Zentriert das Bild horizontal */
+    margin-bottom: 20px; /* Abstand zum folgenden Text */
+}
+
+/* Styles für das Portraitbild */
+.portrait-img {
+    width: 150px; /* Breite des Bildes */
+    height: 150px; /* Höhe des Bildes */
+    border-radius: 50%; /* Macht das Bild weiterhin rund */
+    object-fit: cover; /* Stellt sicher, dass das Bild den Kreis ausfüllt, ohne verzerrt zu werden */
+    border: 5px solid #7abde0; /* Ein Rahmen, der zum Design passt */
+    box-shadow: 0 0 15px rgba(122, 189, 224, 0.6); /* Ein leichter Leuchteffekt um das Bild */
+    display: block; /* Ermöglicht margin: auto für die Zentrierung */
+    margin: 0 auto; /* Zentriert das Bild horizontal innerhalb seines Containers */
+}
+
+h1 {
+    color: #ffffff; /* Reines Weiß für Hauptüberschrift, maximaler Kontrast */
+    text-align: center;
+    margin-bottom: 20px; /* Abstand nach dem Namen */
+    font-size: 3.5em;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3); /* Stärkerer Schatten für h1 */
+}
+
+h2 {
+    color: #f0f4f7; /* Sehr helles Grau für Sektionstitel, klarer Kontrast */
+    text-align: left;
+    margin-bottom: 25px;
+    font-size: 2.2em;
+    border-bottom: 2px solid #3d5a73; /* Deutlicherer, dunklerer Unterstrich */
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+h3 {
+    color: #adc7e0; /* Mittelhelles Blau für h3, gut sichtbar */
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 1.6em;
+    text-align: left;
+    font-weight: 500;
+}
+
+p {
+    margin-bottom: 1.5em;
+    text-align: left;
+    color: #c9d5e0;
+}
+
+/* Spezifische Styles für den Einleitungstext */
+p.intro-text {
+    text-align: center;
+    font-size: 1.25em; /* Beibehalten wie gewünscht */
+    line-height: 1.5; /* Beibehalten wie gewünscht */
+    margin-bottom: 1.2em; /* Etwas mehr Abstand nach unten für bessere Optik */
+    color: #ffffff; /* Reinweiß für stärksten Kontrast */
+    font-weight: 600; /* Deutlicher fetter */
+    /* Die Umrandungs-Regeln wurden hier entfernt, da sie nicht gewünscht waren */
+}
+
+a {
+    color: #7abde0; /* Helles Blau für Links, damit sie gut herausstechen */
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+a:hover {
+    color: #aad4ed; /* Noch heller beim Hover für mehr Interaktion */
+    text-decoration: underline;
+}
+
+/* Styles für die Info-Blöcke (Contact, PGP/S/MIME, LinkedIn) */
+.info-block {
+    background: linear-gradient(145deg, #3d5a73, #25394a); /* Verlauf von hellerem zu dunklerem Blau, um Kontrast zum Container zu erzeugen */
+    padding: 35px 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border: 1px solid #5a7794; /* Kräftigerer Rand, der sich abhebt */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35); /* Stärkerer Schatten für Tiefe */
+    transition: all 0.4s ease-out; /* Übergang für Schatten und Rand */
+    margin-top: 25px; /* Abstand zur vorherigen Sektion */
+}
+
+.info-block:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45); /* Noch stärkerer Schatten bei Hover */
+    /* transform: translateY(-5px); */ /* DIESE REGEL WURDE ENTFERNT, UM DIE BEWEGUNG ZU STOPPEN */
+    border-color: #6c8aab; /* Rand wird bei Hover noch deutlicher */
+}
+
+/* Stil für den neuen Trenner */
+.section-divider {
+    border: none;
+    border-top: 2px solid #3d5a73; /* Deutlicher Trenner im Kontrast zum Hintergrund */
+    margin: 25px 0; /* Abstand des Trenners */
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Zentriert das p-Element im Footer */
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 60px;
+    color: #aebacd;
+    font-size: 0.95em;
+    border-top: 1px solid #3d5a73;
+    padding-top: 30px;
+    background-color: #25394a;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.15);
+}
+.footer p {
+    margin-bottom: 0.7em;
+    color: #aebacd;
+    text-align: center; /* Stellt sicher, dass der TEXT IM p-Element zentriert ist */
+}
+.footer a {
+    color: #aebacd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer a:hover {
+    text-decoration: underline;
+    color: #c9d5e0;
+}
+
+/* Neue Styles für die Definitionsliste (dl) für Kontakt- und Schlüsselinfos */
+.info-list {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 25px 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: baseline;
+}
+
+.info-list dt {
+    font-weight: bold;
+    color: #d1dde8; /* Hellerer Ton für die Beschreibungen, starke Abgrenzung */
+    text-align: left;
+    padding-right: 15px;
+    flex-shrink: 0;
+}
+
+.info-list dd {
+    margin-left: 0;
+    text-align: left;
+    color: #c9d5e0; /* Textfarbe angepasst */
+}
+
+/* Anpassung für das E-Mail-Bild, damit es im Textfluss bleibt */
+.email-image-inline {
+    max-height: 1.4em;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+    border: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.small-hint {
+    font-size: 0.9em;
+    color: #aebacd; /* Gut sichtbare Farbe */
+    display: block;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+/* Neuer Style für den umrandeten Fingerprint */
+.fingerprint-box {
+    display: inline-block;
+    background-color: #3d5a73; /* Dunklerer Hintergrund für den Kasten */
+    border: 1px solid #7abde0; /* Hellerer, klarer Rahmen */
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
+    font-size: 0.95em;
+    word-break: break-all;
+    white-space: normal;
+    color: #ffffff; /* Weißer Text im Kasten, sehr hoher Kontrast */
+    box-shadow: inset 0 1px 4px rgba(0,0,0,0.2); /* Etwas stärkerer innerer Schatten */
+}
+
+/* Anpassung für die ul/li Liste in den Datenschutzhinweisen (und generell) */
+.container ul {
+    list-style: disc inside;
+    padding-left: 20px;
+    margin-bottom: 1.5em;
+    text-align: left;
+    color: #c9d5e0;
+}
+
+.container ul ul {
+    list-style: circle inside;
+    padding-left: 20px;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+/* Verhindert Zeilenumbruch für bestimmte Textteile */
+.no-wrap {
+    white-space: nowrap;
+}
+
+/* Regel: Verhindert Zeilenumbruch für die gesamte Phrase, die zusammenbleiben soll */
+.no-break-phrase {
+    white-space: nowrap;
+}
+
+/* Style für den Verifizierungshinweis */
+.verification-hint {
+    font-size: 0.95em; /* Etwas kleiner als der Haupttext, aber gut lesbar */
+    color: #aebacd; /* Eine dezentere Farbe */
+    margin-top: -1em; /* Zieht es näher an den vorherigen Absatz heran */
+    margin-bottom: 1.5em; /* Schafft Abstand zum Trenner */
+    text-align: center;
+}
+.verification-hint a {
+    color: #7abde0; /* Sorgt dafür, dass der Link im Hinweis hervorsticht */
+    font-weight: bold;
+}
+
+/* Styles für die Bildung und LinkedIn-Liste im LinkedIn-Block */
+.education-linkedin-list {
+    list-style: disc inside; /* Standard-Aufzählungszeichen */
+    padding-left: 20px; /* Einrückung */
+    margin-top: 1em; /* Abstand zum Titel */
+    margin-bottom: 1.5em; /* Abstand nach unten */
+    text-align: left;
+    color: #c9d5e0; /* Textfarbe wie der normale Absatztext */
+    font-size: 1em; /* Standard-Absatzgröße, damit es gleichwertig aussieht */
+}
+
+.education-linkedin-list li {
+    margin-bottom: 0.8em; /* Abstand zwischen den Listenelementen */
+}
+
+.education-linkedin-list li a {
+    font-weight: normal; /* Link nicht extra fett, um gleiche Wertigkeit zu haben */
+}
