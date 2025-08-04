@@ -3,26 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über mich - KDJ158</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+    <title>Kontakt & Infos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Hallo, ich bin KDJ158!</h1>
-    </header>
-    <main>
-        <section class="about-me">
-            <h2>Wer ich bin</h2>
-            <p>Willkommen auf meiner persönlichen Webseite. Hier werde ich bald mehr über mich, meine Interessen und Projekte erzählen.</p>
-            <p>Schau bald wieder vorbei!</p>
-        </section>
-        <section class="contact">
+    <div class="container">
+        <h1>Kai Jurkschat</h1>
+
+        <div class="portrait-container">
+            <img src="k1.png" alt="Portrait von Kai Jurkschat" class="portrait-img">
+        </div>
+
+        <p class="intro-text">
+            Da ich - abgesehen von LinkedIn - keine sozialen Medien mehr nutze, <span class="no-break-phrase">hier der direkte und datenschutzkonforme Kontakt zu mir ;)</span>
+        </p>
+        <hr class="section-divider">
+
+        <div class="contact-info info-block">
             <h2>Kontakt</h2>
-            <p>Du kannst mich erreichen unter: <a href="mailto:deine@email.de">deine@email.de</a> (Diese E-Mail-Adresse kannst du später ändern).</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 KDJ158. Alle Rechte vorbehalten.</p>
+            <dl class="info-list"> <dt>E-Mail:</dt>
+                <dd>
+                    <img src="ctct.png" alt="E-Mail-Adresse" class="email-image-inline">
+                    <br>
+                    <span class="small-hint">(E-Mail zum Schutz vor Spam-Bots als Bild)</span>
+                </dd>
+
+                <dt>Public PGP-Key:</dt>
+                <dd>
+                    <a href="keys/kai_jurkschat_public_key.asc" download>PGP_KEY.asc</a><br>
+                    <span class="small-hint">
+                        <strong>Fingerprint:</strong> <span class="fingerprint-box">534A 89BC F2E3 71D0 C987 DE65 4321 AGFE DCBA 9876</span><br>
+                    </span>
+                </dd>
+
+                <dt>S/MIME:</dt>
+                <dd>
+                    Ein S/MIME-Zertifikat für die oben angezeigte E-Mail-Adresse ist in den öffentlichen Verzeichnisdiensten hinterlegt.
+                </dd>
+
+                <dt>Threema-ID:</dt>
+                <dd>
+                    JKFZ8549
+                </dd>
+            </dl>
+        </div>
+
+        <div class="linkedin-info info-block">
+            <h2>Info</h2>
+            <ul class="education-linkedin-list">
+                <li>Technisches Gymnasium Konstanz</li>
+                <li>Hochschule Anhalt</li>
+                <li>Mein <a href="https://www.linkedin.com/in/kai-jurkschat-344269252/" target="_blank" rel="noopener noreferrer">LinkedIn-Profil</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p><a href="datenschutzhinweis.html">Datenschutzhinweis</a></p>
     </footer>
 </body>
 </html>
